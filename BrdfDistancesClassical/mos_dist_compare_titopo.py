@@ -5,7 +5,7 @@ from utility_functions import ComputeDistances
 
 # Parameters : replace with your own
 limitAngle = 80
-distanceFile = "./AllResultsForLearningWithoutGPLVM.csv"
+distanceFile = "./PerceptualDistances.csv"
 resultFile = "./MosvalidationClamp80Cbrt.csv"
 MerlRefDirectory = "/Volumes/Nouveau nom/bvqm/merl/"
 MerlApproxDirectory = "/Volumes/Nouveau nom/bvqm/merl_approx/"
