@@ -4,29 +4,19 @@ import os.path
 # ---- Directories and data location : put your own here and add them to Paths array
 
 DistanceFiles = {
-        '../../Data/ExperimentResults/RealExperiment/AllResultsForLearningWithoutGPLVM.csv'
+        '../Data/PerceptualDistancesWithoutGPLVM.csv'
 
 }
 MerlDirectories = {
-	'/media/nbonneel/Elements1/FINAL_BVQM/merl/',
-	'D:/nbonneel/CNRS/csol/Data/titopoh/merl/',
-        '../../Data/merl/',
-        '/home/jpfarrug/Documents/Dev/bvqm/Data/merl/',
-        '/Users/meros_k/Documents/Dev/MachineLearning/TensorFlowP3/Data/merl/',
-        '/media/disc/csoler/MERL/',
+	'../Data/merl/',
 }
 
 MerlApproxDirectories = {
-        '/media/nbonneel/Elements1/FINAL_BVQM/merl_approx/',
-        'D:/nbonneel/CNRS/csol/Data/titopoh/merl_approx/',
-        '../../Data/merl_approx/',
-        '/home/jpfarrug/Documents/Dev/bvqm/Data/merl_approx/',
-        '/Users/meros_k/Documents/Dev/MachineLearning/TensorFlowP3/Data/merl_approx/',
-        '/media/disc2/csoler/Bvqm_Data/',    
+        '../Data/merl_approx/',
 }
 
 BrdfListFiles = {
-	'../../Data/MaterialType.csv'
+	'../Data/MaterialType.csv'
 }
 
 def distanceFile():
