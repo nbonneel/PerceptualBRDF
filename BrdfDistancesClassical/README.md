@@ -1,6 +1,6 @@
 # Python code for metrics in the paper *Perceptual Quality of BRDF approximations; dataset and metrics*
 
-This python code compute all nine metrics used in the paper *Perceptual Quality of BRDF approximations: dataset and metrics*, for a single BRDF or for the whole dataset. The input BRDF must be in a proprietary format, Titopo, which lineal samples the BRDF along the Theta_In, Theta_out and Phi_out angles, with the same number of samples than the binary (MERL) format. Binary files may be converted using the provided BrdfConvert code, written in C++. Please refer to the corresponding README for compilation and usage instructions. We also provide a python script to do this, but the conversion is very slow in this case.
+This python code compute all nine metrics used in the paper *Perceptual Quality of BRDF approximations: dataset and metrics*, for a single BRDF or for the whole dataset. The input BRDF must be in a proprietary format, Titopo, which linearly samples the BRDF along the Theta_In, Theta_out and Phi_out angles, with the same number of samples than the binary (MERL) format. Binary files may be converted using the provided BrdfConvert code, written in C++. Please refer to the corresponding README for compilation and usage instructions. We also provide a python script to do this, but the conversion is very slow in this case.
 
 ## Usage :
 ### Computing all 9 metrics for two single BRDFs : 
@@ -32,7 +32,7 @@ Finally, call the conversion function:
 from utility_functions import *
 ComputeDistances(brdf1, brdf2, False, 80)
 ```
-The computeDistance fonction outputs an array with 10 values : 9 are the metrics from the paper, in the same order, and the tenth is the Mean Opinion Score value from the crowdsourcing experiment. The third and fourth parameter of the ComputeDistance function controls, respectively, the initial cubic root applied to the data, and the grazing angle cutoff.
+The computeDistance fonction outputs an array with 9 values, which are the metrics values from the paper, in the same order. The third and fourth parameter of the ComputeDistance function control, respectively, the initial cubic root applied to the data, and the grazing angle cutoff.
 
 ### Computing metrics for the whole dataset 
 To compute metrics values for the whole dataset, you will need the file with the results of the crowdsourcing experiment (*MOS_Grace.csv*). You may also use your own if you comply to the same format.
